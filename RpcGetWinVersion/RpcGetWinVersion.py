@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-Copyright 2020 by Nicolas Delhaye (@_Homeostasie_)
+Copyright 2020 by Nicolas Delhaye
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
