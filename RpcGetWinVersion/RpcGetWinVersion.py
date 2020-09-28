@@ -22,7 +22,7 @@ import struct
 from impacket.dcerpc.v5 import transport
 from impacket.dcerpc.v5.rpcrt import RPC_C_AUTHN_WINNT, RPC_C_AUTHN_LEVEL_CONNECT, MSRPC_BIND
 from impacket.dcerpc.v5.rpcrt import MSRPCHeader, MSRPCBind, MSRPCBindAck, SEC_TRAILER, CtxItem
-from impacket.dcerpc.v5.dcomrt import IID_IObjectExporter
+from impacket.dcerpc.v5.dcomrt import IID_IUnknown
 from impacket import ntlm
 from impacket.uuid import uuidtup_to_bin
 
@@ -114,10 +114,9 @@ def main(argv):
     dcerpc = rpctransport.get_dce_rpc()      
     dcerpc.connect()      
     
-    resp = bind_ntlm_authinfo(dcerpc, IID_IObjectExporter)
+    resp = bind_ntlm_authinfo(dcerpc, IID_IUnknown)
     display_os_version(resp)
      
         
 if __name__ == "__main__":
    main(sys.argv[1:])
-
