@@ -18,21 +18,24 @@ Usage
 =====
 
  * RpcGetWinVersion.py -t <target>
+   
+Examples
+---------
+1. root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.128 
+
+Version 6.1 (Build 7601)
+
+2. root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.139
+
+Version 10.0 (Build 19041)
 
 Tested on
 =========
 
  * Microsoft Windows Version 6.1 (Build 7601: Service Pack 1)
-root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.128
-Version 6.1 (Build 7601)
-
  * Microsoft Windows Version 1909 (OS Build 18363.1082)
-root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.138
-Version 10.0 (Build 18362)
-
  * Microsoft Windows Version 2004 (OS Build 19401.450)
-root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.139
-Version 10.0 (Build 19041)
+
 
 Requirements
 ============
