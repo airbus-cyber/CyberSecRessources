@@ -65,4 +65,4 @@ limitations under the License.
 
 Authors
 =======
-Nicolas Delhaye (@_Homeostasie_)
+Nicolas Delhaye (@\_Homeostasie\_)
