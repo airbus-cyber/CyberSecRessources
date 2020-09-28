@@ -17,17 +17,21 @@ containing OS version information as part of the NTLMSSP_CHALLENGE message type.
 Usage
 =====
 
- * RpcGetWinVersion.py -t <target>
+ * RpcGetWinVersion.py -t \<target\>
    
 Examples
 ---------
-1. root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.128 
-
+Result from a Windows OS with Version 6.1 (Build 7601: Service Pack 1):
+```bash
+root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.128 
 Version 6.1 (Build 7601)
+```
 
-2. root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.139
-
+Result from a Windows OS with Version 2004 (OS Build 19401.450):
+```bash
+root@kali-2019:~/Desktop# ./RpcGetWinVersion.py -t 192.168.1.139
 Version 10.0 (Build 19041)
+```
 
 Tested on
 =========
